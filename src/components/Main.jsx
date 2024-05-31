@@ -46,7 +46,7 @@ function Main() {
         <Loading />
         <main>
           <div className="content">
-            <h1 className="main-title">Forum Diskusi</h1>
+            <h1 className="main-title">Forum Diskusi App</h1>
             <div className="card">
               <ThreadList
                 threads={threadsList}
