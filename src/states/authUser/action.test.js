@@ -31,16 +31,16 @@ const fakeErrorResponse = new Error('Ups, something went wrong');
 
 describe('asyncSetAuthUser thunk', () => {
   beforeEach(() => {
-    api.login = api.login;
-    api.getOwnProfile = api.getOwnProfile;
+    api._login = api.login;
+    api._getOwnProfile = api.getOwnProfile;
   });
   afterEach(() => {
-    api.login = api.login;
-    api.getOwnProfile = api.getOwnProfile;
+    api.login = api._login;
+    api.getOwnProfile = api._getOwnProfile;
   });
   // delete and back up data
-  delete api.login;
-  delete api.getOwnProfile;
+  delete api._login;
+  delete api._getOwnProfile;
 
   it('should dispatch action correctly when data fetching success', async () => {
     // arrange
