@@ -1,6 +1,6 @@
 /**
  * - RegisterForm Testing Scenario
- * 
+ *
  *   - should handle name typing correctly
  *   - should handle email typing correctly
  *   - should handle password typing correctly
